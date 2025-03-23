@@ -50,8 +50,6 @@ namespace Grate.GUI
 
         protected override void Awake()
         {
-            if (NetworkSystem.Instance.GameModeString.Contains("MODDED_"))
-            {
                 Instance = this;
                 try
                 {
@@ -563,5 +561,4 @@ namespace Grate.GUI
             }
             catch (Exception e) { Logging.Exception(e); }
         }
-    }
 }
